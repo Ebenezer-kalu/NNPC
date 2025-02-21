@@ -1,0 +1,164 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+header .logo img {
+  width: 100px;
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: none;
+  
+}
+
+main {
+  padding: 40px;
+  background-color: white;
+}
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:   white;
+  transition: background-image 2s ease-in-out;
+  position: relative;
+  filter: brightness(0.5); /* Darkens the background */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 20px;
+  position: relative; /* Allows for absolute positioning of child elements */
+}
+
+.text-container {
+  margin-top: -180px;
+  display: flex;
+  flex-direction: row;  /* Align horizontally */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;  /* Add spacing between title and paragraph */
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;  /* Remove margin for tighter alignment */
+}
+
+.hero-content p {
+  font-size: 1.7rem;
+  margin: 0;  /* Remove margin for tighter alignment */
+}
+
+/* Button below title content */
+.hero-content .cta-button {
+  position: absolute; /* Absolute positioning to align with nav buttons */
+  margin-top: 20px;
+  top: 50%; /* Adjust vertically to align under the title */
+  left: 0; /* Align to the left side */
+  transform: translateY(70%); /* Fine-tune vertical positioning */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  z-index: 1; /* Ensures the button appears above the background image */
+}
+
+
+
+.hero-content .button-container {
+  position: absolute;
+  top: 50%; /* Align buttons under the title */
+  left: 0;
+  transform: translateY(50%); /* Adjust vertical positioning */
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start; /* Align buttons to the left */
+  z-index: 1; /* Ensure buttons appear above background image */
+}
+
+.hero-content .nav-button {
+  margin-top: 70px;
+  width: 50px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+
+.hero-content .prev {
+  background-color: rgb(201, 172, 9)
+}
+
+.hero-content .next {
+  background-color: rgb(201, 172, 9);
+}
+
+/* Line Indicator */
+.indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-dot.active {
+  background-color: rgb(201, 172, 9);
+}
