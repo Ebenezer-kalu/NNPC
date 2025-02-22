@@ -4,7 +4,7 @@ import Header from './header';
 import Hero from "./hero";
 import NNPCSection from "./NNPCSection";
 import Workforce from "./workforce";
-
+import YearOfService from "./YearOfService";
 
 
 
@@ -18,6 +18,8 @@ function App() {
       <Hero/>
       <NNPCSection/>
       <Workforce/>
+      <YearOfService/>
+
       
       
     </div>

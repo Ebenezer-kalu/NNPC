@@ -27,7 +27,7 @@ const Workforce = () => {
   return (
     <div style={styles.container}>
       {/* Div 1 */}
-      <div style={{marginTop:"20px",border: '2px solid black'}}>
+      <div style={{marginTop:"20px",border: '1px solid black'}}>
         <img src="oil.png" alt="Image 1" style={styles.image} />
         <div style={{marginTop:"20px"}}>
           <div style={styles.bold}>No1</div>
@@ -36,7 +36,7 @@ const Workforce = () => {
       </div>
 
       {/* Div 2 */}
-      <div style={{marginTop:"20px",border: '2px solid black'}}>
+      <div style={{marginTop:"20px",border:'1px solid black',}}>
         <img src="network.png" alt="Image 2" style={styles.image} />
         <div style={{marginTop:"20px"}}>
           <div style={styles.count}>{Math.round(count)}+</div>
