@@ -1,0 +1,89 @@
+/* ChatWithUs.css */
+.chat-container {
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9999;
+  }
+  
+  .chat-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: #52d831;
+    color: rgb(15, 13, 13);
+    font-weight: 500;
+    border-radius: 9999px;
+    box-shadow: 0px 4px 6px rgba(214, 249, 37, 0.1);
+    
+  }
+  
+  .chat-button:hover {
+    background-color: #caf03e; 
+  }
+  
+  .chat-button:active {
+    transform: scale(0.95);
+  }
+  
+  .chat-box {
+    position: fixed;
+    bottom: 70px; /* Keeps it above the button */
+    right: 6px;
+    width: 320px;
+    background: white;
+    border: 3px solid #4dd76d;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(199, 242, 100, 0.1);
+    padding: 16px;
+    z-index: 9999;
+  }
+  
+  .chat-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #7df04c;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  .chat-input:focus {
+    border-color: #7df04c;
+    box-shadow: 0px 0px 5px#7df04c;
+  }
+  
+  .chat-textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid#7df04c;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+  }
+  
+  .chat-textarea:focus {
+    border-color: #7df04c;
+    box-shadow: 0px 0px 5px #7df04c;
+  }
+  
+  .chat-send {
+    width: 100%;
+    background-color: #0db10f;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .chat-send:hover {
+    background-color: #caf03e;
+  }
+  
