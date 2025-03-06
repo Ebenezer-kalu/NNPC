@@ -8,7 +8,9 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src="logo.png" alt="NNPC Logo" />
+        <Link to="/">
+            <img src="logo.png" alt="NNPC Logo" />
+        </Link>
       </div>
 
       {/* Hamburger Menu */}
@@ -30,8 +32,7 @@ const Header = () => {
           <li>
             <Link 
               to="/contactUs" 
-              style={{ backgroundColor: "green", padding: "10px 17px", color: "white", textDecoration: "none" }}
-            >
+              style={{ backgroundColor: "green", padding: "10px 17px", color: "white", textDecoration: "none" }}>
               Contact us
             </Link>
           </li>

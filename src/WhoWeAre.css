@@ -1,0 +1,115 @@
+/* Adds 20px margin from all sides */
+.who-we-are {
+  margin: 20px;
+  width: calc(100% - 40px);
+  padding-top: 0;
+  overflow: hidden; /* Prevents content overflow */
+}
+
+/* Hero section with zoom effect */
+.hero-section {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom effect on hover */
+.hero-section:hover {
+  transform: scale(1.1);
+}
+
+/* Content section */
+.content-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+/* Heading with slide-in animation */
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Slide-in effect for text */
+.content-box p {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInText 1s ease-out forwards 0.5s;
+}
+
+/* Keyframes for slide-in animations */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideInText {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* Content container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .content-container {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+
+/* Content box */
+.content-box {
+  padding: 1.5rem;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInText 1s ease-out forwards 1s;
+}
+
+/* Image container */
+.content-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom effect on the image */
+.content-box img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .content-box {
+      width: 45%;
+  }
+}

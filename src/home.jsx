@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
@@ -103,7 +104,9 @@ const Home = () => {
             <h1>{textContent[currentIndex].title}</h1>
             <p>{textContent[currentIndex].paragraph}</p>
           </div>
-          <button className="cta-button">WHO WE ARE</button>
+          <Link to="/whoWeAre">
+              <button className="cta-button">WHO WE ARE</button>
+          </Link>
           <div className="button-container">
             <button className="nav-button prev" onClick={handlePrevBackground}style={{backgroundColor:"yellow",marginTop:"20px",borderRadius:"50px"}}>
               &lt;&lt;
